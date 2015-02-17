@@ -14,12 +14,15 @@ To execute
 * If desired, run the ``make_fig.py`` script to generate the figures again
 * At the command prompt on the ubuntu guest, do::
 
-    xelatex -shell-escape test.tex
-    xelatex -shell-escape test.tex
-    mk4ht oolatex test.tex
+```
+xelatex -shell-escape test.tex
+xelatex -shell-escape test.tex
+mk4ht oolatex test.tex
+```
     
 * Run the python script ``image_resizer.py`` which will resize the images in the ODT document (paths are hard coded for now) from 300 DPI to 96 dpi.
 * Open the ``test_smaller.odt`` file in LibreOffice and save as Microsoft Word format
+* See also: http://ask.libreoffice.org/en/question/2641/convert-to-command-line-parameter/
     
 Caveats
 =======
