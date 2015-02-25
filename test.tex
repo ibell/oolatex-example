@@ -10,8 +10,7 @@
 \tikzset{
     png copy/.style={
         external/system call={
-            pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource";
-            convert -density 300 -transparent white "\image.pdf" "\image.png"
+            pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource" & convert -density 300 -transparent white "\image.pdf" "\image.png"
         }
     }
 }
