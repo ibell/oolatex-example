@@ -5,7 +5,7 @@ Container
 ---------
 ```
 docker image build -t texml .
-docker container run -it -v "$(pwd)":=/oo texml bash
+docker container run -it -v "$(pwd)":/oo texml bash
 ```
 
 Build
